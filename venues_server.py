@@ -120,13 +120,6 @@ def get_venue(venue_id):
         abort(404)
     return jsonify( { 'venue': venue[0] } )
 
-@app.route('/devsnearme/api/v0.1/venues/<int:venue_id>', methods = ['GET'])
-def get_venue(venue_id):
-    venue = filter(lambda v: v['id'] == venue_id, venues)
-    if len(venue) == 0:
-        abort(404)
-    return jsonify( { 'venue': venue[0] } )
-
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify( { 'error': 'Not found' } ), 404)
