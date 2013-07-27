@@ -1,7 +1,6 @@
 #!flask/bin/python
 from flask import Flask, jsonify, abort, make_response, request
 
-
 # REST boilerplate set up with prototype venue type but needs to be changed based on
 # data available. APIs first, database later. Hook REST api to android google maps api
 # Use google places data side by side as well to 
@@ -22,8 +21,8 @@ venues = [
   {
      "geometry" : {
         "location" : {
-           "lat" : 37.79593620000001,
-           "lng" : -122.40000320
+           "lat" : 40.7530817,
+           "lng" : -73.9892742
         }
      },
      "id" : 1,
@@ -42,8 +41,8 @@ venues = [
   {
      "geometry" : {
         "location" : {
-           "lat" : 37.79593620000001,
-           "lng" : -122.40000320
+           "lat" : 40.7030556,
+           "lng" : -73.9894444
         }
      },
      "id" : 2,
@@ -62,8 +61,8 @@ venues = [
   {
      "geometry" : {
         "location" : {
-           "lat" : 37.79593620000001,
-           "lng" : -122.40000320
+           "lat" : 40.7369245,
+           "lng" : -73.9931029
         }
      },
      "id" : 3,
