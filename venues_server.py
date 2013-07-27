@@ -106,7 +106,7 @@ venues = [
         }
      },
      "id" : 5,
-     "name" : "iPhone Boot Camp",
+     "name" : "Tigerspike Inc",
      "types" : [ "iOS", "Android", "JavaScript" ],
      "min_attendance" : 16,
      "expected_attendance" : 47,
