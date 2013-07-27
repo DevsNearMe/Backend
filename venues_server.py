@@ -17,6 +17,7 @@ app = Flask(__name__)
 # Change to venues, which have autoincremented id, lat, lon, (/devsnearme/api/v0.1/venues?latitude=43.23432&longitude=-73.234234&radius)
 # min_turnout, expected_turnout, max_turnout
 
+#Prototype JSON data
 venues = [
   {
      "geometry" : {
@@ -89,7 +90,7 @@ venues = [
      "name" : "iPhone Boot Camp",
      "types" : [ "iOS", "Database" ],
      "min_attendance" : 16,
-     "expected_attendance" : 47,
+     "expected_attendance" : 67,
      "max_attendance" : 78,
      "factors" : {
         "foursquare" : 0.40,
@@ -117,10 +118,28 @@ venues = [
         "meetup" : 0.20,
         "eventbrite" : 0.19
     }
-  }
+  },
+  {
+     "geometry" : {
+        "location" : {
+           "lat" : 40.745 ,
+           "lng" : -73.9888
+        }
+     },
+     "id" : 6,
+     "name" : "The Flatiron School",
+     "types" : [ "Ruby", "iOS" ],
+     "min_attendance" : 16,
+     "expected_attendance" : 23,
+     "max_attendance" : 78,
+     "factors" : {
+        "foursquare" : 0.40,
+        "twitter" : 0.21,
+        "meetup" : 0.20,
+        "eventbrite" : 0.19
+    }
+  }  
 ]
-
-
 
 #TODO Implement lat,lon, radius based fetch
 # Allow query via names
