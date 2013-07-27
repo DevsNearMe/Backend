@@ -10,7 +10,7 @@ from flask import Flask, jsonify, abort, make_response, request
 # adding predictions for gender, age distribution estimates etc.
 
 # Pull in some test data to implement. Explain that in reality celery background venues 
-# will populate a database
+# will populate a database, possibly Redis
 
 app = Flask(__name__)
 
@@ -77,8 +77,50 @@ venues = [
         "meetup" : 0.15,
         "eventbrite" : 0.17
     }
+  },
+  {
+     "geometry" : {
+        "location" : {
+           "lat" : 40.78,
+           "lng" : -73.97
+        }
+     },
+     "id" : 4,
+     "name" : "iPhone Boot Camp",
+     "types" : [ "iOS", "Database" ],
+     "min_attendance" : 16,
+     "expected_attendance" : 47,
+     "max_attendance" : 78,
+     "factors" : {
+        "foursquare" : 0.40,
+        "twitter" : 0.21,
+        "meetup" : 0.20,
+        "eventbrite" : 0.19
+    }
+  },
+  {
+     "geometry" : {
+        "location" : {
+           "lat" : 40.714623 ,
+           "lng" : -74.006605
+        }
+     },
+     "id" : 5,
+     "name" : "iPhone Boot Camp",
+     "types" : [ "iOS", "Android" ],
+     "min_attendance" : 16,
+     "expected_attendance" : 47,
+     "max_attendance" : 78,
+     "factors" : {
+        "foursquare" : 0.40,
+        "twitter" : 0.21,
+        "meetup" : 0.20,
+        "eventbrite" : 0.19
+    }
   }
 ]
+
+
 
 #TODO Implement lat,lon, radius based fetch
 # Allow query via names
