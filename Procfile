@@ -1,0 +1,1 @@
+web: gunicorn venues_server:app
