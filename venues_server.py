@@ -107,7 +107,7 @@ venues = [
      },
      "id" : 5,
      "name" : "iPhone Boot Camp",
-     "types" : [ "iOS", "Android" ],
+     "types" : [ "iOS", "Android", "JavaScript" ],
      "min_attendance" : 16,
      "expected_attendance" : 47,
      "max_attendance" : 78,
